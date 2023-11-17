@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Hanken;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height:  100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Hanken;
+    background-color: hsla(241, 100%, 89% , 0.1);
+}
+
+.main-content-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 20px hsla(241, 100%, 89% , 0.5);
+    border-radius: 25px;
+}
+
+.result-block , .summary-block{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 300px;
+    height: 500px;
+    
+}
+
+.result-block {
+    align-items: center;
+    padding: 50px 20px;
+    color: white;
+    background-image:linear-gradient(0deg , hsl(241, 81%, 54%) ,hsl(252, 100%, 67%)) ;
+}
+
+
+.header-result {
+    color: rgb(206, 199, 199);
+    font-size: 12px;
+}
+
+.circle-score {
+    padding-top: 30px ;
+    width: 150px;
+    height: 150px;
+    background-image:linear-gradient(180deg ,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    border-radius: 50%;
+}
+
+.circle-score h1 {
+    font-size: 50px;
+}
+
+.text-result {
+    padding: 0px 20px;
+}
+
+.text-result p {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.summary-block{
+    padding: 25px;
+}
+.summary-block h1 {
+    text-align: start;
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.summary-ui{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 220px;
+    margin-bottom: 25px;
+
+}
+.ui-item {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.ui-item i {
+    color: rgb(104, 101, 101);
+    margin-left: 75px;
+}
+
+.ui-item i span {
+    color: black;
+}
+
+.verbal i {
+    margin-left: 90px;
+}
+
+.visual i {
+    margin-left: 95px;
+}
+
+.reaction {
+    color:hsl(0, 100%, 67%) ;
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56% , 0.1)
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37% ,0.1)
+}
+
+.visual{
+    color:hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%,0.1);
+}
+
+button {
+    height: 40px;
+    border-radius: 25px;
+    background-color: #303C58 ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image:linear-gradient(0deg , hsl(241, 81%, 54%) ,hsl(252, 100%, 67%)) ;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media only screen and (width <= 600px) {
+    .main-content-block {
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    .result-block {
+        width: 100%;
+    }
+
+    .summary-block{
+        width: 100%;
+    }
+}
+
+
